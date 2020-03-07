@@ -1,14 +1,12 @@
 ---
-# This is an example playbook to execute Ansible tests.
-
 - name: Verify
   hosts: all
   tasks:
-  - name: Check Installed a EPEL Package.
+  - name: Check Installed a epel-release package.
     package_facts:
       manager: auto
 
-  - name: Test if EPEL Package is installed.
+  - name: Test if epel-release is installed.
     assert:
       that:
         - "'epel-release' in ansible_facts.packages"

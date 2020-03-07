@@ -1,0 +1,8 @@
+---
+- name: Converge
+  hosts: all
+
+  tasks:
+    - name: "Include repo_epel_role"
+      include_role:
+        name: "repo_epel_role"
