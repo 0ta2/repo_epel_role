@@ -9,7 +9,7 @@ jobs:
       matrix:
         MOLECULE_DISTRO: ['centos:centos7', 'centos:centos8']
 
-        python-version: ['3.5']
+        python-version: ['3.x']
 
     steps:
       - name: Check out code.
